@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+
+
+
+
+      // let product = {
+      //   company: "Mango",
+      //   price: 340,
+      //   item_name: "T-Shirt",
+      //   'item-product':"eva",
+      // };
+      // console.log(typeof product);
+      // console.log(product);
+    //   console.log(product.company); //dot Notation
+    //   console.log(product.item_name);
+    //   console.log(product.price);
+// let propertyName='item-product';
+//       product.company = "banana";
+//       console.log(product);
+//       console.log(product['company']); //bracket  Notation
+//       console.log(product.item_name);
+//       console.log(product['item-product']);
+//       console.log(product[propertyName]);
+
+//       console.log(product.price);
+
+//     //   delete product.company;
+//       delete product['company'];
+//       console.log(product);
+
+let product={
+  company:'Mango',
+  price:345,
+  'item-name':'T-shirt',
+  displayPrice : function(){
+    console.log(`Price of product is ₹${this.price}`)
+  }
+};
+// product.displayPrice();
+
+
+// AutoBoxing
+
+      //  console.log('This is JavaScript'.toUpperCase());
+
+  // object Reference    
+// ---->Primitive data type copy the data only
+  // let a=23;
+  // let b=1;
+  // console.log(`${a},${b}`);
+  // a=90;
+  // console.log(`${a},${b}`);
+
+
+  // --->object work on pass by reference so change in one will affect on other
+// let x={num:4};
+// let y=x;
+// console.log(`x=${x.num},${y.num}`);
+// x.num=45;
+
+// console.log(`x=${x.num},${y.num}`);
+
+let {company,price}=product;
+console.log(company);
+console.log(price);
+
+    </script>
+  </body>
+</html>

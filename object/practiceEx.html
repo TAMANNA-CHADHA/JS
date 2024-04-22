@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let myProduct={
+    comoany: 'Jumbo',
+    item:'Sandals',
+    'price-item':456,
+  
+displayProduct:function(){
+    return `${myProduct.comoany},${myProduct.item} `
+}
+}
+alert(myProduct.displayProduct());
+
+console.log(myProduct[`price-item`]); //bracket notation
+
+let x={num:90};
+let y=x;
+alert(`${x.num},${y.num}`);
+x.num=99;
+alert(`${x.num},${y.num}`);
+
+// let obj={
+//     message:'good job',
+// status:'complete',
+// } ;
+// let{message,status}=obj;
+// console.log(obj)
+// console.log(message);
+// console.log(status);
+  function isIdentical(p1,p2){
+
+if(typeof p1!='object'|| typeof p2!=='object'){
+    console.warn('Parameter passed was not an Object');
+    return false;
+}
+
+if(p1==p2)
+return true; 
+
+if(p1.comoany==p2.comoany && p1.item===p2.item ){
+    return true;
+}else{
+    return false;
+}
+
+};
+let myProduct2={
+    comoany: 'Jumbo',
+    item:'Sandals',
+    'price-item':456,
+  
+displayProduct:function(){
+    return `${myProduct.comoany},${myProduct.item} `
+}
+}
+console.log(isIdentical(myProduct,''));
+
+console.log(isIdentical(myProduct,myProduct2));
+console.log(isIdentical(myProduct2,myProduct2));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// let arr=[5,6];
+// arr.unshift(7);
+// arr.push(7)
+// console.log(arr);
+
+// function arrReturn(){
+//     return arr[2];
+// }
+// console.log(arrReturn());
+
+// let at=[arr];
+// at.valueOf();
+// console.log(at);
+
+
+function isPrime(num){
+    for(let i=2;i<num;i++){
+        if(num%i===0){
+            return false;
+            
+        }else{
+            return true;
+
+        }
+    }
+}
+console.log(isPrime(8));
+
+let num=2;
+let i=0;
+while(i<5){
+    if(isPrime(num)){
+        console.log(num);
+        i++;
+}num++;
+    }
+
+ 
+// for(let i=10;i>=1;i--){
+// console.log(i);
+// }
+
+
+// let aray=[1,-6,5,7,-98];
+// for(let i=0;i<aray.length;i++){
+//     if(aray[i]<0){
+//         continue;
+//     }
+//     else{
+//         console.log(aray[i]);
+//     }
+// }
+
+let sum='';
+let str=['KG','Coding','JavaScript','Course','is','Best'];
+for(let i=0;i<str.length;i++){
+    sum+= str[i]+' ';
+}
+console.log(sum);
+
+    </script>
+</body>
+</html>
